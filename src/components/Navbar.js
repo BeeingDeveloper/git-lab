@@ -2,6 +2,8 @@ import React from 'react'
 import '../utils/style.css'
 import {TfiClose} from 'react-icons/tfi';
 import MENU from '../assets/images/menu-icon.png';
+import {motion} from 'framer-motion';
+
 
 import {
     Drawer,
@@ -19,7 +21,7 @@ const Navbar = () => {
     <div className='h-24 w-full z-50 '>
         <div className=' h-24 w-screen bg-white transition-all ease-in duration-200 ' >
             <div className='w-[80%] h-full m-auto flex justify-between items-center'>
-                <div className='flex  my-[20px] gap-2'>
+                <div className='flex  my-[20px] gap-2 cursor-pointer'>
                     <div className=' logo'>
                         <div className='logo-c1'>
                             <div className='logo-c2'>
@@ -38,7 +40,7 @@ const Navbar = () => {
                     <li className=' transition-all ease-in-out duration-200 hover:scale-75 cursor-pointer'>Template</li>
                 </ul>
 
-                <button className='hidden lg:flex btn-color text-white p-2'>Contact Us</button>
+                <motion.button whileHover={{scale: 0.9}} className='hidden lg:flex btn-color text-white p-2'>Contact Us</motion.button>
                 <button className='md:hidden border border-b-blue-50 p-2 py-3'
                         onClick={onOpen}
                         >

@@ -126,6 +126,9 @@
         left: calc(50% - 5%);
         bottom: 27rem;
     }
+    .man-img{
+        left: 16rem;
+    }
 }
 
 
@@ -136,6 +139,15 @@
         left: calc(50% - 5%);
         bottom: 23.5rem;
     }
+    .man-img{
+        left: 5rem
+    }
+    .dublin-box{
+        left: -10rem
+    }
+    .box-blue-64{
+        left: 5rem
+    }
 }
 
 
@@ -144,6 +156,15 @@
     .play-btn{
         left: calc(50% - 5%);
         bottom: 21.5rem;
+    }
+    .man-img{
+        left: -5rem
+    }
+    .dublin-box{
+        left: -20rem
+    }
+    .box-blue-64{
+        left: -5rem
     }
 }
 

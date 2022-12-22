@@ -22,14 +22,11 @@ const Home = () => {
         <div className='h-16 w-screen'>
             <div className='flex w-full lg:w-[75%] relative m-auto justify-between'>
                 <div className='h-16 w-16 small-box'> </div>
-                <div className='hidden lg:block w-[529.19px] h-[652.39px] bg-white relative left-[15rem]'>
+                <div className='hidden lg:block w-[529.19px] h-[660px] bg-white relative left-[15rem]'>
                     <div className='h-[80%] w-full small-box pt-16'>
                         <div className='grid grid-cols-7 w-[55%]'>
                             {fields}
                         </div>
-                    </div>
-                    <div className='h-[20%] w-full'>
-
                     </div>
                 </div>
             </div>
@@ -74,17 +71,18 @@ const Home = () => {
                 {/* =====================RIGHT============== */}
                 <div className=' flex'>
                     <div className='flex'>
-                        <img src={MANIMG} alt='man' className='relative lg:top-20 lg:left-64 pt-20 lg:pt-0' />
-                        <div className='w-12 h-12  bg-blue-800 relative left-[49.5%] bottom-[-2rem]'></div>
+                        <img src={MANIMG} alt='man' className='relative lg:top-20  pt-20 lg:pt-0 man-img min-w-[470px] min-h-[587px]' />
+                        <div className='w-12 h-12  bg-blue-800 relative left-[49.5%] box-blue-64 bottom-[-2rem]'></div>
                     </div>
-                    <div className='hidden lg:block w-[21rem] h-[18rem] bg-white relative  top-[24rem] p-12'>
+                    <div className='hidden lg:block w-[21rem] h-[18rem] dublin-box bg-white relative  top-[24rem] p-12'>
                         <h4 className='font-bold text-slate-600'>I felt like I couldn’t grow until I moved to Opus. Now I am encouraged to sell more with them.</h4>
                         <div className='text-2xl font-extrabold flex flex-col lg:flex-row mt-10'>
                             <div className=''>
-                                <h2>Frank Dublin </h2>
+                                <h2 className='w-44'>Frank Dublin </h2>
                                 <span className='text-lg text-slate-400 font-semibold'>CEO <a href='#'>@ STAMPS</a> </span> 
                             </div>
                             <img src={COMMA} alt='comma' className='h-8 w-10 ml-4' />
+                            <div className='relative min-w-[25rem] min-h-[10rem] bg-white left-[2rem] bottom-10'></div>
                        </div>
                     </div>  
                 </div>
