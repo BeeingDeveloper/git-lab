@@ -5,7 +5,8 @@ import MANIMG from '../assets/images/man.png';
 import DOT from '../assets/images/dots.png';
 import _L from '../assets/images/l-logo.png';
 import {motion} from 'framer-motion'
-import 'aos/dist/aos.css'
+import COMMA from '../assets/images/commas.png'
+import {RiMouseLine} from 'react-icons/ri'
 
 const Home = () => {
 
@@ -21,7 +22,7 @@ const Home = () => {
         <div className='h-16 w-screen'>
             <div className='flex w-full lg:w-[75%] relative m-auto justify-between'>
                 <div className='h-16 w-16 small-box'> </div>
-                <div className='hidden lg:block w-[529.19px] h-[660.39px] bg-white relative left-[15rem]'>
+                <div className='hidden lg:block w-[529.19px] h-[652.39px] bg-white relative left-[15rem]'>
                     <div className='h-[80%] w-full small-box pt-16'>
                         <div className='grid grid-cols-7 w-[55%]'>
                             {fields}
@@ -78,16 +79,27 @@ const Home = () => {
                     </div>
                     <div className='hidden lg:block w-[21rem] h-[18rem] bg-white relative  top-[24rem] p-12'>
                         <h4 className='font-bold text-slate-600'>I felt like I couldn’t grow until I moved to Opus. Now I am encouraged to sell more with them.</h4>
-                        <div className='text-2xl font-extrabold flex flex-col mt-10'>
-                            <h2>Frank Dublin </h2>
-                            <span className='text-lg text-slate-400 font-semibold'>CEO <a href='#'>@ STAMPS</a> </span> </div>
+                        <div className='text-2xl font-extrabold flex flex-col lg:flex-row mt-10'>
+                            <div className=''>
+                                <h2>Frank Dublin </h2>
+                                <span className='text-lg text-slate-400 font-semibold'>CEO <a href='#'>@ STAMPS</a> </span> 
+                            </div>
+                            <img src={COMMA} alt='comma' className='h-8 w-10 ml-4' />
+                       </div>
                     </div>  
                 </div>
-
-
-                
             </div>
-            
+        </div>
+        <div className='hidden lg:flex w-screen h-32'>
+            <div className='w-[75%] flex m-auto h-full bg-slate-200'>
+                <div className='flex w-[40%]  h-full justify-center items-center'>
+                    <RiMouseLine className='h-6 w-6 text-slate-400' />
+                    <h3 className='font-bold text-slate-500'>SCROLL FOR MORE</h3>
+                </div>
+                <div className='btn-color h-full w-[60%]'>
+
+                </div>
+            </div>
         </div>
     </div>
   )
