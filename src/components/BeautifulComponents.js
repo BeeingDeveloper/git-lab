@@ -47,7 +47,7 @@ const BeautifulComponents = () => {
         </section>
 
 
-        <section className='w-[90%] lg:w-[75%] h-full m-auto pt-44 pb-10 flex flex-col lg:flex-row justify-between'>
+        <section className='w-[90%] lg:w-[75%] h-full m-auto pt-44 pb-10 flex flex-col lg:flex-row gap-20 lg:gap-0 justify-between'>
             <div>
                 <div className='flex h-fit'>
                     <div className='h-[4rem] w-[4rem] bg-slate-200'>

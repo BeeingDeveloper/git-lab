@@ -61,9 +61,9 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col lg:flex-row lg: justify-between gap-10'>
-            <div className='flex w-[50%] justify-between flex-col lg:flex-row'>
+            <div className='flex w-[50%] justify-between flex-col gap-20 lg:gap-0 lg:flex-row'>
                 <div>
-                    <h2 className='font-bold text-slate-400 pb-10'>OVERVIEW</h2>
+                    <h2 className='font-bold text-slate-400 pb-5 lg:pb-10'>OVERVIEW</h2>
                     <ul>
                         {
                             overview.map((elm, i)=>{
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2  className='font-bold text-slate-400 pb-10'>PAGES</h2>
+                    <h2  className='font-bold text-slate-400 pb-5 lg:pb-10'>PAGES</h2>
                     <ul>
                         {
                             pages1.map((elm, i)=>{
@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h2  className='font-bold text-slate-400 pb-10'>PAGES</h2>
+                    <h2  className='font-bold text-slate-400 pb-5 lg:pb-10'>PAGES</h2>
                     <ul>
                         {
                             pages2.map((elm, i)=>{
