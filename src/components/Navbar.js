@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../utils/style.css'
 import {TfiClose} from 'react-icons/tfi';
 import MENU from '../assets/images/menu-icon.png';
@@ -12,14 +12,12 @@ import {
   } from '@chakra-ui/react'
 const Navbar = () => {
 
-    const [shadow, setShadow] = useState('');
 
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement, setPlacement] = React.useState('right')
 
   return (
     <div className='h-24 w-full z-50 '>
-        <div className='absolute h-24 w-screen bg-white transition-all ease-in duration-200 ' style={{boxShadow: shadow }} >
+        <div className=' h-24 w-screen bg-white transition-all ease-in duration-200 ' >
             <div className='w-[80%] h-full m-auto flex justify-between items-center'>
                 <div className='flex  my-[20px] gap-2'>
                     <div className=' logo'>

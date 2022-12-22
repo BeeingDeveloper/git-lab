@@ -8,7 +8,7 @@ import SUGERCANE from '../assets/images/Sugercane.png'
 
 const Partners = () => {
   return (
-    <div className='w-[90%] lg:w-[75%] m-auto h-auto text-center pb-32'>
+    <div className='w-[90%] lg:w-[75%] m-auto h-auto text-center pb-10 lg:pb-32 pt-10'>
         <h2 className=' font-extrabold text-3xl'>Trusted and loved by the world's best teams</h2>
         
         <div className='grid grid-cols-1 lg:grid-cols-4 text-slate-700 w-[75%] m-auto pt-24 '>

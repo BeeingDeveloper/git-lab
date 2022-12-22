@@ -2,8 +2,7 @@ import React from 'react'
 import '../utils/style.css'
 import CURSOR from '../assets/images/cursor.png';
 import ROCKET from '../assets/images/rocket.png';
-
-
+import {motion} from 'framer-motion';
 
 const Features = () => {
   return (
@@ -20,7 +19,7 @@ const Features = () => {
                 arcu non lectus dapibus, a pulvinar mauris aliquam.
                 </h4>
 
-                <button className='btn-color p-2 px-10 text-white w-[12rem] '>Learn More</button>
+                <motion.button whileHover={{scale: 0.9}} className='btn-color p-2 px-10 text-white w-[12rem] '>Learn More</motion.button>
             </div>
         </div>
 

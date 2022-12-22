@@ -3,6 +3,8 @@ import '../utils/style.css'
 import RESOURCE1 from '../assets/images/resource1.png';
 import RESOURCE2 from '../assets/images/resource2.png';
 import RESOURCE3 from '../assets/images/resource3.png';
+import {motion} from 'framer-motion'
+
 
 const Resources = () => {
 
@@ -27,9 +29,9 @@ const Resources = () => {
 
   return (
     <div className='w-[90%] lg:w-[75%] m-auto'>
-        <div className='w-[80%] m-auto flex justify-between pb-20'>
-            <h2>Resources</h2>
-            <button className='btn-color p-2 px-4 text-white'>Get Started</button>
+        <div className='w-[80%] m-auto flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between pb-20'>
+            <h2 className='text-2xl lg:text-[2.5rem] font-extrabold'>Resources</h2>
+            <motion.button  whileHover={{scale: 0.9}} className='btn-color w-fit p-2 px-4 text-white'>Get Started</motion.button>
         </div>
 
         <div className='grid grid-cols-1 lg:grid-cols-3'>
@@ -40,7 +42,7 @@ const Resources = () => {
                                 <img src={elm.img} alt={elm.heading} />
                                 <h2 className='text-3xl font-bold h-32'>{elm.heading}</h2>
                                 <h4 className='text-light-gray'>{elm.lorem}</h4>
-                                <button className='bg-slate-200 p-3 px-4 mt-5'>Read Article</button>
+                                <motion.button whileHover={{scale: 0.9}} className='bg-slate-200 p-3 px-4 mt-5'>Read Article</motion.button>
                             </div>
                     )
                 })

@@ -4,11 +4,11 @@ import {BsArrowRight} from 'react-icons/bs';
 import MANIMG from '../assets/images/man.png';
 import DOT from '../assets/images/dots.png';
 import _L from '../assets/images/l-logo.png';
-import {RiMouseLine} from 'react-icons/ri';
-
-
+import {motion} from 'framer-motion'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+
     const fields= [];
     for (let i = 1; i <= 42; i++) {
       fields.push(<div className=' h-2 w-10 mr-20 mb-10 ' key={i}>
@@ -17,77 +17,82 @@ const Home = () => {
     }
 
   return (
-    <>
-    <div className='w-screen h-50rem bg-blue'>
-        <div className=' h-12 w-screen flex bg-white'>
-            <div className='h-full w-10 small-box ml-52'>
-
-            </div>
-            <div className='hidden lg:flex flex-col absolute right-0 h-[718px] w-[529.19px] '>
-                <div className='h-[80%] w-full small-box bg-red-600 '>
-                    <div className='h-28 w-64 grid grid-cols-7 dots pt-10'>
-                        {fields}
+    <div>
+        <div className='h-16 w-screen'>
+            <div className='flex w-full lg:w-[75%] relative m-auto justify-between'>
+                <div className='h-16 w-16 small-box'> </div>
+                <div className='hidden lg:block w-[529.19px] h-[660.39px] bg-white relative left-[15rem]'>
+                    <div className='h-[80%] w-full small-box pt-16'>
+                        <div className='grid grid-cols-7 w-[55%]'>
+                            {fields}
+                        </div>
                     </div>
-                </div>
+                    <div className='h-[20%] w-full'>
 
-                <div className='h-[20%] bg-white'>
-
+                    </div>
                 </div>
             </div>
         </div>
 
-{/* INTRO */}
-        <div className='text-white flex flex-col  h-full  w-[60%] m-auto pt-20 '>
-            <div className='flex w-full h-full flex-col lg:flex-row  '>
-                <div className='w-[50%] h-auto justify-items-center items-center '>
-                    <h2 className='text-[2rem] lg:text-[5rem] font-bold text-center lg:text-left line-h'> 
-                        Built for<span className='flex gap-5'>enterprise<img src={_L} alt='l' className='h-10 lg:h-20' /></span> business
-                        </h2>
+        <div className='w-full m-auto bg-blue h-auto flex'>
+            <div className='flex flex-col lg:flex-row w-[80%] m-auto'>
+                {/* =================LEFT=============== */}
+                <div className='flex'>
+                    <div className='hidden lg:flex flex-col pt-20 '>
+                        <div className='h-64 w-64 grid grid-cols-7'>
+                            {fields}
+                        </div>
+                        <div className='h-20 w-20 bg-dark-blue-box'></div> 
+                    </div>
 
-                    <h5 className='text-slate-300'>Opus includes everything you need to build a beautiful website for your business. Built to perform and look good doing so.</h5>
+                    <div className='relative lg:left-[-9rem]'>
+                        <div className='h-8 w-8 style-box-blue '></div>
+                        <div className='text-white text-center lg:text-left'>
+                            <h2 className='text-[2.5rem] lg:text-[4.5rem] font-extrabold lg:leading-[5rem]'>
+                                Built for<br/> 
+                                    <div className='flex gap-0 text-center w-fit m-auto lg:m-0'>
+                                        <h2>enterprise</h2>
+                                        <img src={_L} alt='l' className='hidden lg:block h-6 w-4 lg:h-16 lg:w-12 ml-4 my-auto' /> 
+                                    </div>
+                                business.
+                            </h2>
+                            <h4 className=' text-slate-200 text-sm lg:text-lg pt-5 leading-6 w-[20rem] lg:w-[25rem]'>Opus includes everything you need to build a beautiful website for your business. Built to perform and look good doing so.</h4>
+                        </div>
+
+                        <div className='flex text-white mt-6 gap-10'>
+                            <motion.button whileHover={{scale: 0.9}} className='flex btn-color p-2 px-4 gap-2 font-semibold'>
+                                <h4>Learn More</h4>
+                                <BsArrowRight className='my-auto' />
+                            </motion.button>
+                            <div className='flex my-auto'>Explore Pages</div>
+                        </div>
+                    </div>
+                </div>
                     
-                    <div className=' flex h-fit gap-8'>
-                        <button className='btn-color p-3 flex gap-3'>
-                            Learn More 
-                            <BsArrowRight className='h-fit text-xl my-auto' /> 
-                        </button>
-                        <h2 className='my-auto'>Explore Pages</h2>
-                    </div> 
-                </div>
-
-
-                <div className='w-[50%] h-[587.5px] z-20 pt-16 '>
+                
+                {/* =====================RIGHT============== */}
+                <div className=' flex'>
                     <div className='flex'>
-                        <img alt='man' src={MANIMG} className='h-[587.5px] w-[470px] man-img' />
-                        <div className=' relative bottom-[48px] h-[48px] w-[48px] img-sm-box'></div>
+                        <img src={MANIMG} alt='man' className='relative lg:top-20 lg:left-64 pt-20 lg:pt-0' />
+                        <div className='w-12 h-12  bg-blue-800 relative left-[49.5%] bottom-[-2rem]'></div>
                     </div>
-
-                    <div className='relative hidden lg:block bottom-60 left-[40%] h-[15rem] w-[18rem] p-10 bg-white text-black  flex-col gap-10'>
-                        <h5>I felt like I couldn’t grow until I moved to Opus. Now I am encouraged to sell more with them.</h5>
-                        <h2 className='text-2xl font-bold'>
-                            Frank Dublin<br/>
-                            <span className='text-sm'>CEO <a href='#'>@STAMPS</a> </span>
-                        </h2>
-
-                    </div>
+                    <div className='hidden lg:block w-[21rem] h-[18rem] bg-white relative  top-[24rem] p-12'>
+                        <h4 className='font-bold text-slate-600'>I felt like I couldn’t grow until I moved to Opus. Now I am encouraged to sell more with them.</h4>
+                        <div className='text-2xl font-extrabold flex flex-col mt-10'>
+                            <h2>Frank Dublin </h2>
+                            <span className='text-lg text-slate-400 font-semibold'>CEO <a href='#'>@ STAMPS</a> </span> </div>
+                    </div>  
                 </div>
+
+
+                
             </div>
+            
         </div>
     </div>
-
-    <div className='hidden lg:flex w-full h-28'>
-        <div className='bg-green-600 h-full w-[50%] m-auto flex'>
-            <div className='bg-slate-200 h-full w-[40%] flex justify-center items-center'>
-                <div className='flex gap-3'>
-                    <RiMouseLine className='text-xl scrl-4-more' />
-                    <h2 className=' font-bold scrl-4-more'>SCROLL FOR MORE</h2>
-                </div>
-            </div>
-            <div className='small-box h-full w-[60%]'></div>
-        </div>
-    </div>
-    </>
   )
 }
 
 export default Home
+
+
